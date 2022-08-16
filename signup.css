@@ -1,46 +1,54 @@
-* [
-    padding: 0;
-    margin: 0;
-]
-
 .container{
-
+    display: flex;
+    height: 100vh;
 }
 
 .box{
-
+    flex: 1;
+    display: flex;
 }
 
 .left {
 
 }
-
 .right {
+    flex-direction: column;
+    
 
+}
 
+.right div{
+    border: 1px solid brown;  */  
 }
 .top{
-
-}
-
-.subhead1 {
-
+    align-items: flex-end;
 }
 
 .middle{
-
+    display: flex;
+    flex-direction: column;
+    
+   
 }
 
 .subhead2 {
+    flex: .2;
+}
 
+.itemcontainer{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
 }
 
 .item {
-
+    flex: 1;
 }
-.bottom {
-
+.itemB{
+    flex: .5;
 }
+
 .buttoncontainer{
-    
+    flex: .5;
+    margin-left: 1vw;
 }
