@@ -28,12 +28,12 @@ legend {
 
 .example .overlay {
     position: absolute;
-    top: 5px;
-    left: 15px;
-    font-weight: bold;
-    text-align: center;
+    bottom: 3px;
+    padding: 0;
+    margin: 0;
     font-size: 10px;
-    color: pink;
+    color: white;
+    left: 250px;
 }
 
 .container > :first-child {
