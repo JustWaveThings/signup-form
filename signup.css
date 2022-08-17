@@ -1,3 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 legend {
-    display: none;
+   display: none;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+.box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+}
+.top, .middle, .bottom {
+    display: flex;
+    flex: 1;
+    border: .3rem solid blue; 
+}
+.top {
+    flex-direction: column-reverse;  
+}
+.middle{
+    flex-direction: column;
+
+}
+.middle > * {
+    border: 3px solid red;
+}
+.signup {
+    flex-basis: 600%;
+    align-items: stretch;
+}
+
+.signcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 400px;
+    
+}
+.cont {
+    border: 3px solid greenyellow;
+    
+}
+
+.sub2 {
+    flex-basis: 75%;
+    display: flex;
+}
+p {
+    padding: .5em;
+}
+label {
+    display: block;
 }
