@@ -15,36 +15,29 @@ legend {
     flex:1;
     display: flex;
     flex-direction: column;
+    
 }
 
-/* img {
-    width: 100%;
-    height: 100%;
-} */
 
-.example img {
-    width: 100%;
-}
-
-.example .overlay {
+.overlay {
     position: relative;
-    bottom: 150px;
-    padding: 0;
-    margin: 0;
-    font-size: 10px;
+    bottom: 3%;
     color: white;
-    left: 250px;
-
 }
 
 .container > :first-child {
     align-items: center;
     justify-content: end;
+    background-image: url(img/matt-houghton.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
 }
 
 .container > :nth-child(1) > div {
     justify-content: center;
-    
+
 }
 
 .container >:nth-child(2){
