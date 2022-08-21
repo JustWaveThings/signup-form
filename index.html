@@ -43,20 +43,20 @@
                                 </div>
                                 <div class="signup">
                                     <div class="signcontainer">
-                                        <div class="cont"><label for="firstName">First Name</label>
-                                            <input type="text" name="firstName" id="firstName">
+                                        <div class="cont"><label for="firstName">*First Name</label>
+                                            <input type="text" name="firstName" id="firstName" placeholder="Odin" required minlength="2" maxlength="20">
                                         </div>
                                         <div class="cont"><label for="lastName">Last Name</label> <input type="text" name="lastName"
-                                                id="lastName">
+                                                id="lastName" placeholder="Odinson"  minlength="2" maxlength="20">
                                         </div>
-                                        <div class="cont"><label for="email">Email</label><input type="email" name="email" id="email">
+                                        <div class="cont"><label for="email">*Email</label><input type="email" name="email" id="email" placeholder="odin@odin.com" required  minlength="5" maxlength="40">
                                         </div>
-                                        <div class="cont"><label for="phoneNumber">Phone Number</label><input type="text" name="phoneNumber"
-                                                id="phoneNumber"></div>
-                                        <div class="cont"><label for="password">Password</label> <input type="password" name="password"
-                                                id="password"></div>
-                                        <div class="cont"><label for="confirmPassword">Confirm Password</label><input type="password"
-                                                name="confirmPassword" id="confirmPassword"></div>
+                                        <div class="cont"><label for="phoneNumber">*Phone Number</label><input type="text" name="phoneNumber"
+                                                id="phoneNumber" placeholder="123-456-7890" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="123-456-7890" required></div>
+                                        <div class="cont"><label for="password">*Password</label> <input type="password" name="password"
+                                                id="password" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=.\-_*])([a-zA-Z0-9@#$%^&+=*.\-_]){3,}$" title="Password must contain an uppercase letter, lowercase letter, at least one number and at least one special character." required></div>
+                                        <div class="cont"><label for="confirmPassword">*Confirm Password</label><input type="password"
+                                                name="confirmPassword" id="confirmPassword"pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=.\-_*])([a-zA-Z0-9@#$%^&+=*.\-_]){3,}$" title="Password must contain an uppercase letter, lowercase letter, at least one number and at least one special character."required></div>
                                     </div>
                     
                                 </div>
