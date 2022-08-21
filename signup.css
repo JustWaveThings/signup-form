@@ -2,6 +2,23 @@
     padding: 0;
     margin: 0;
 } */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); 
+
+@font-face {
+    font-family: 'odin';
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+        url('fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'typewriter';
+    src: url('fonts/veteran_typewriter-webfont.woff2') format('woff2'),
+        url('fonts/veteran_typewriter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 legend {
    display: none;
@@ -12,7 +29,7 @@ legend {
     height: 100vh;
 }
 .box {
-    flex:1;
+    flex: 1;
     display: flex;
     flex-direction: column;
     
@@ -23,25 +40,63 @@ legend {
     position: relative;
     bottom: 3%;
     color: white;
+    display: flex;
+}
+
+.left-top {
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    max-width: 100%;
+}
+
+.left-bottom {
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.outerbox {
+    display: flex;
+    align-items: center;
+    background-color: rgba(1, 18, 1, 0.31); 
+    padding: 2%;
+    flex: 1;
+    justify-content: center;
+    flex-direction: row-reverse;
+    
 }
 
 .container > :first-child {
-    align-items: center;
-    justify-content: end;
+   /*  align-items: center; */
     background-image: url(img/matt-houghton.jpg);
     background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll;
     background-size: cover;
+    display: flex;
+
 }
 
-.container > :nth-child(1) > div {
+.odin-img {
     justify-content: center;
+}
+
+.odin-text {
+    font-family: "odin";
+    font-size: 100px;
+    color: white;
+}
+
+.container > :nth-child(1) > :first-of-type(div) {
+    display: flex;
 
 }
 
 .container >:nth-child(2){
     flex: 1.5;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+
 }
 
 .top, form {
@@ -90,18 +145,52 @@ form{
     
 }
 
+button {
+    font-family: Roboto, sans-serif;
+    color: white;
+    font-size: 15px;
+    background-color: #4CAF50;
+    border: none;
+    padding: 15px 32px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .buttoncontainer {
    position: relative;
-   top: 10px;
-   left: 10px;
+   top: 20px;
+   left: 20px;
 }
 p {
     padding: .5em;
 }
 label {
     display: block;
+    font-size: 10px;
 }
 
 a {
     color: white;
+}
+
+.overlay {
+    font: .8em "Roboto", normal, normal;
+    background: none;
+    
+}
+
+.bottom > :nth-child(2) > p > a {
+    color: green;
+    text-decoration: none;
+    
+}
+
+.bottom > :nth-child(2) {
+    margin-top: 2%;
+}
+
+.middle {
+    padding-bottom: 2%;
 }
